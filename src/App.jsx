@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "./Button";
-
+import "./App.css";
 const App = () => {
   return (
     <div className="cantainer">
@@ -8,7 +8,7 @@ const App = () => {
         <input type="text" value="2" />
       </form>
       <div className="keypad">
-        <Button>clear</Button>
+        <Button>Clear</Button>
         <Button>C</Button>
         <Button>&#xF7;</Button>
         <Button>7</Button>
