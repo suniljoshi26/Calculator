@@ -11,9 +11,17 @@ const App = () => {
   const clear = () => {
     setResult("");
   };
-  //backspace one letter
+  //backspace one letter-1
   const backspace = () => {
     setResult(result.slice(0, -1));
+  };
+  const calculate = () => {
+    try {
+      setResult(eval(result).toString());
+    } catch {
+      alert(" please enter a valid value");
+      setResult("");
+    }
   };
   return (
     <div className="cantainer">
@@ -73,7 +81,7 @@ const App = () => {
         <Button name="." onClick={handleClick}>
           .
         </Button>
-        <Button className="highlight" id="result" onClick={handleClick}>
+        <Button className="highlight" id="result" onClick={calculate}>
           =
         </Button>
       </div>
