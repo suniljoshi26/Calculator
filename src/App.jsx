@@ -1,31 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "./Button";
 import "./App.css";
 const App = () => {
+  const [result, setResult] = useState("hi");
+  const handleClick = () => {};
   return (
     <div className="cantainer">
       <form>
-        <input type="text" value="2" />
+        <input type="text" value={result} />
       </form>
       <div className="keypad">
-        <Button>Clear</Button>
-        <Button>C</Button>
-        <Button>&#xF7;</Button>
-        <Button>7</Button>
-        <Button>8</Button>
-        <Button>9</Button>
-        <Button>&times;</Button>
-        <Button>4</Button>
-        <Button>5</Button>
-        <Button>6</Button>
-        <Button>&ndash;</Button>
-        <Button>1</Button>
-        <Button>2</Button>
-        <Button>3</Button> <Button>1</Button>
-        <Button>+</Button>
-        <Button>0</Button>
-        <Button>.</Button>
-        <Button>=</Button>
+        <Button onClick={handleClick}>Clear</Button>
+        <Button onClick={handleClick}>C</Button>
+        <Button onClick={handleClick}>&#xF7;</Button>
+        <Button onClick={handleClick}>7</Button>
+        <Button onClick={handleClick}>8</Button>
+        <Button onClick={handleClick}>9</Button>
+        <Button onClick={handleClick}>&times;</Button>
+        <Button onClick={handleClick}>4</Button>
+        <Button onClick={handleClick}>5</Button>
+        <Button onClick={handleClick}>6</Button>
+        <Button onClick={handleClick}>&ndash;</Button>
+        <Button onClick={handleClick}>1</Button>
+        <Button onClick={handleClick}>2</Button>
+        <Button onClick={handleClick}>3</Button> <Button>1</Button>
+        <Button onClick={handleClick}>+</Button>
+        <Button onClick={handleClick}>0</Button>
+        <Button onClick={handleClick}>.</Button>
+        <Button onClick={handleClick}>=</Button>
       </div>
     </div>
   );
