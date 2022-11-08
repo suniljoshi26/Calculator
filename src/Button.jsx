@@ -1,8 +1,8 @@
 import React from "react";
-
-export const Button = ({ children, onClick, name }) => {
+import "./Button.css";
+export const Button = ({ children, onClick, name, id }) => {
   return (
-    <button onClick={onClick} name={name}>
+    <button onClick={onClick} name={name} id={id}>
       {children}{" "}
     </button>
   );
