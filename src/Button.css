@@ -1,0 +1,9 @@
+button {
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px #ffff;
+  background-color: rgb(231, 163, 36);
+  color: #ffff;
+  cursor: pointer;
+}

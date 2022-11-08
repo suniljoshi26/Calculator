@@ -11,18 +11,20 @@ const App = () => {
   const clear = () => {
     setResult("");
   };
-  //backspace
-  const backspace = () => {};
+  //backspace one letter
+  const backspace = () => {
+    setResult(result.slice(0, -1));
+  };
   return (
     <div className="cantainer">
       <form>
         <input type="text" value={result} />
       </form>
       <div className="keypad">
-        <Button id="clear" onClick={clear}>
+        <Button className="highlight" id="clear" onClick={clear}>
           Clear
         </Button>
-        <Button id="backspace" onClick={handleClick}>
+        <Button className="highlight" id="backspace" onClick={backspace}>
           C
         </Button>
         <Button name="/" onClick={handleClick}>
@@ -71,7 +73,7 @@ const App = () => {
         <Button name="." onClick={handleClick}>
           .
         </Button>
-        <Button id="result" onClick={handleClick}>
+        <Button className="highlight" id="result" onClick={handleClick}>
           =
         </Button>
       </div>
