@@ -35,7 +35,7 @@ const App = () => {
         <Button className="highlight" id="backspace" onClick={backspace}>
           C
         </Button>
-        <Button name="/" onClick={handleClick}>
+        <Button className="highlight" name="/" onClick={handleClick}>
           &#xF7;
         </Button>
         <Button name="7" onClick={handleClick}>
@@ -47,7 +47,7 @@ const App = () => {
         <Button name="9" onClick={handleClick}>
           9
         </Button>
-        <Button name="*" onClick={handleClick}>
+        <Button className="highlight" name="*" onClick={handleClick}>
           &times;
         </Button>
         <Button name="4" onClick={handleClick}>
@@ -59,7 +59,7 @@ const App = () => {
         <Button name="6" onClick={handleClick}>
           6
         </Button>
-        <Button name="-" onClick={handleClick}>
+        <Button className="highlight" name="-" onClick={handleClick}>
           &ndash;
         </Button>
         <Button name="1" onClick={handleClick}>
@@ -72,7 +72,7 @@ const App = () => {
           3
         </Button>
 
-        <Button name="+" onClick={handleClick}>
+        <Button className="highlight" name="+" onClick={handleClick}>
           +
         </Button>
         <Button name="0" onClick={handleClick}>
